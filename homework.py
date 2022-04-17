@@ -47,3 +47,21 @@ print(m)
 
 # checking if the object is callable or not
 print("The Person object is callable: ", callable)
+
+
+class MyString2():
+
+    def __init__(self, name, lastname):
+        self.name = name
+        self.length = len(name)
+        self.lastname = lastname
+
+    def __str__(self):
+        return self.name
+
+    def self_len_count(self):
+        return f"Name length: {len(self.name)}"
+
+    def enter_string_count(self, string_value):
+        x = len(string_value)
+        return x
