@@ -59,6 +59,9 @@ class MyString2():
     def __str__(self):
         return self.name
 
+    def __call__(self):
+        print(f"Name length: {len(self.name)}")
+
     def self_len_count(self):
         return f"Name length: {len(self.name)}"
 
